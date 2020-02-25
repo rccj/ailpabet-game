@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>{{title}}</h1>
+      <!-- <input type="button" value="重置" @click="clearAll()"> -->
+    </header>
+    <div class="content">
+      <ul>
+        <li v-for="item in alphabetList" @dblclick='deleteAlph(item)' :class="{active: item.deleted}">{{item.alphabet}}
+        </li>
+      </ul>
+    </div>
+    <footer></footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./all.js"></script>
+</body>
+
+</html>
