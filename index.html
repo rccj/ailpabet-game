@@ -12,11 +12,12 @@
   <div id="app">
     <header>
       <h1>{{title}}</h1>
-      <!-- <input type="button" value="重置" @click="clearAll()"> -->
+      <input type="button" value="重置" @click="clearAll()">
+      <div class="counting">{{countDown}}</div>
     </header>
     <div class="content">
-      <ul>
-        <li v-for="item in alphabetList" @dblclick='deleteAlph(item)' :class="{active: item.deleted}">{{item.alphabet}}
+      <ul @dblclick=>
+        <li v-for="item in alphabetList" @dblclick='deleteAlph(item),countDownTimer()' :class="{active: item.deleted}">{{item.alphabet}}
         </li>
       </ul>
     </div>

@@ -72,9 +72,16 @@ h1 {
   margin: 20px;
   padding: 20px;
   border: aquamarine 2px solid;
+  user-select: none;
 }
 
 li.active {
   text-decoration: line-through;
   background-color: darkgray;
+}
+
+.counting{
+  font-size: 60px;
+  margin-left: 30%;
+
 }
