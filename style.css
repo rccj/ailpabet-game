@@ -85,3 +85,27 @@ li.active {
   margin-left: 30%;
 
 }
+
+@media (max-width: 400px){
+  header {
+    width: 300px;
+    margin: 10px 0;
+  }
+  .counting{
+    font-size: 80px;
+
+    margin-left: 10%;
+    
+  }
+  .content {
+    width: 350px;
+  }
+  .content>ul>li {
+    font-size: 40px;
+    margin: 7px;
+    padding: 7px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
