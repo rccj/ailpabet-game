@@ -1,4 +1,7 @@
 # 字母遊戲
+
+[Demo](https://rccj.github.io/alphabet-game/"Hi")
+
 - 加入ㄅㄆㄇ鍵盤回饋
   - 修復bug 修復bug（點擊與倒數）
   - 20200229 18:26
