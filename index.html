@@ -19,7 +19,7 @@
     </header>
     <div class="content">
       <ul>
-        <li v-for="item in alphabetList" @dblclick='deleteAlph(item),countDownTimer(item)'
+        <li v-for="item in alphabetList" @dblclick='countDownTimer(item)'
           :class="{active: item.deleted}">{{item.alphabet}}
         </li>
       </ul>
